@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 40C20 51.0457 28.9543 60 40 60C51.0457 60 60 51.0457 60 40C60 28.9543 51.0457 20 40 20" stroke="#FFD700" stroke-width="2"/>
+    <path d="M40 15V40" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="40" cy="40" r="35" stroke="#FFD700" stroke-width="2"/>
+    <circle cx="40" cy="40" r="4" fill="#FFD700"/>
+</svg> 

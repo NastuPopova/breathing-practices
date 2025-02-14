@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест дыхания - Узнайте состояние вашего здоровья</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/test.css" rel="stylesheet">
+</head>
+<body>
+    <div class="test-container">
+        <div class="timer">
+            Бесплатный анализ дыхания доступен еще: <span id="timer">15:00</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <form id="breathingTest">
+            <div class="question active" data-question="1">
+                <h3>Как часто вы испытываете нехватку воздуха?</h3>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="1"> Никогда
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="2"> Редко (1-2 раза в месяц)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="3"> Иногда (1-2 раза в неделю)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="4"> Часто (почти каждый день)
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="5"> Постоянно
+                    </label>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button type="button" class="prev-btn" disabled>Назад</button>
+                <button type="button" class="next-btn">Далее</button>
+            </div>
+        </form>
+
+        <div class="results" style="display: none;">
+            <h3>Анализ ваших ответов готов!</h3>
+            <div class="benefits-list">
+                <p>Получите бесплатно:</p>
+                <ul>
+                    <li>Подробный анализ вашего дыхания</li>
+                    <li>Персональные рекомендации</li>
+                    <li>PDF-гид "Почему мы дышим неправильно?"</li>
+                    <li>Технику быстрого снятия стресса</li>
+                </ul>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="Ваш email">
+                </div>
+                <button type="submit" class="submit-btn">
+                    Получить результаты и бонусы
+                </button>
+                <p class="security-note">
+                    🔒 Ваши данные защищены | ✓ Никакого спама
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/test.js"></script>
+</body>
+</html> 
