@@ -22,9 +22,9 @@ const consequences = [
       'Панические атаки учащаются',
       'Стресс накапливается'
     ],
-    color: 'from-purple-500 to-purple-600',
-    iconBg: 'bg-purple-100',
-    iconColor: 'text-purple-500'
+    color: 'from-red-600 to-red-700',
+    iconBg: 'bg-red-100',
+    iconColor: 'text-red-600'
   },
   {
     icon: <Battery className="h-12 w-12" />,
@@ -34,9 +34,9 @@ const consequences = [
       'Работоспособность падает',
       'Отношения страдают'
     ],
-    color: 'from-orange-500 to-orange-600',
-    iconBg: 'bg-orange-100',
-    iconColor: 'text-orange-500'
+    color: 'from-red-700 to-red-800',
+    iconBg: 'bg-red-100',
+    iconColor: 'text-red-700'
   }
 ];
 
@@ -49,16 +49,16 @@ const BreathingConsequences = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-red-900 to-red-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <div className="inline-block p-3 bg-red-100 rounded-full mb-4">
             <AlertTriangle className="h-8 w-8 text-red-600" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Последствия неправильного дыхания
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-red-200 max-w-3xl mx-auto">
             Игнорирование проблем с дыханием может привести к серьезным последствиям
           </p>
         </div>
@@ -67,7 +67,7 @@ const BreathingConsequences = () => {
           {consequences.map((item, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="relative overflow-hidden bg-white/10 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               {/* Gradient line at top */}
               <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${item.color}`} />
@@ -78,7 +78,7 @@ const BreathingConsequences = () => {
                   <div className={`p-4 rounded-xl ${item.iconBg} ${item.iconColor} transition-transform duration-300 group-hover:scale-110`}>
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 ml-4">
+                  <h3 className="text-xl font-semibold text-white ml-4">
                     {item.title}
                   </h3>
                 </div>
@@ -91,7 +91,7 @@ const BreathingConsequences = () => {
                       className="flex items-start"
                     >
                       <span className={`inline-block w-2 h-2 rounded-full mt-2 mr-3 bg-gradient-to-r ${item.color}`} />
-                      <span className="text-gray-600">{consequence}</span>
+                      <span className="text-red-100">{consequence}</span>
                     </li>
                   ))}
                 </ul>

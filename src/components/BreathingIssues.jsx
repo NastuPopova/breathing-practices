@@ -4,7 +4,13 @@ import { Monitor, BookX, Brain, AlertCircle, ChevronRight } from 'lucide-react';
 const issues = [
   {
     icon: <Monitor size={32} />,
-    title: 'Сидячий образ жизни',
+    title: (
+      <>
+        Сидячий<br />
+        образ<br />
+        жизни
+      </>
+    ),
     description: 'Длительная работа за компьютером влияет на осанку и дыхание',
     points: [
       '8+ часов за компьютером ежедневно',
@@ -30,8 +36,8 @@ const issues = [
     description: 'Постоянное напряжение влияет на глубину и ритм дыхания',
     points: [
       'Постоянное напряжение',
-      'Поверхностное дыхание',
-      '"Синдром менеджера"'
+      'Панические атаки учащаются',
+      'Стресс накапливается'
     ],
     color: 'from-purple-500 to-purple-600'
   },
@@ -57,8 +63,15 @@ const BreathingIssues = () => {
     setOpenCards(newOpenCards);
   };
 
+  const handleLearnMoreClick = () => {
+    const aboutBreathingSection = document.getElementById('about-breathing');
+    if (aboutBreathingSection) {
+      aboutBreathingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 bg-gradient-to-b from-primary-100 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -127,7 +140,9 @@ const BreathingIssues = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <button className="bg-teal-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-teal-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <button 
+            onClick={handleLearnMoreClick}
+            className="bg-teal-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-teal-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
             Узнать как исправить
           </button>
         </div>

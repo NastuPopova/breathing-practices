@@ -10,6 +10,7 @@ import Reviews from './components/Reviews';
 import QuickTest from './components/QuickTest';
 import Products from './components/Products';
 import FAQ from './components/FAQ';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <QuickTest />
       <Products />
       <FAQ />
+      <ScrollToTop />
     </div>
   );
 }

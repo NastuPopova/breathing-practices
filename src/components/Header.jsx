@@ -47,18 +47,18 @@ const Header = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 shadow-lg backdrop-blur-sm py-2' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-4 md:py-6">
+        <div className="flex justify-between items-center">
           {/* Logo and Instructor Info */}
           <div className="flex items-start flex-col">
-            <h1 className={`text-lg md:text-xl font-semibold transition-colors duration-300 ${
+            <h1 className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${
               isScrolled ? 'text-gray-800' : 'text-white'
             }`}>
               Анастасия Попова
             </h1>
-            <span className={`text-sm transition-colors duration-300 ${
+            <span className={`text-lg transition-colors duration-300 ${
               isScrolled ? 'text-gray-600' : 'text-white/90'
             }`}>
               Инструктор по дыхательным практикам
@@ -66,15 +66,19 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             {navigation.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-all duration-300 hover:scale-105 ${
+                className={`text-lg font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg ${
                   isScrolled 
-                    ? 'text-gray-700 hover:text-gray-900' 
-                    : 'text-white hover:text-white/80'
+                    ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100' 
+                    : 'text-white hover:text-white/80 hover:bg-white/10'
+                } ${
+                  item.name === 'Купить курс' 
+                    ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 shadow-lg hover:shadow-xl'
+                    : ''
                 }`}
               >
                 {item.name}
@@ -84,13 +88,13 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg"
+            className="md:hidden p-3 rounded-lg"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? 'text-gray-800' : 'text-white'} size={24} />
+              <X className={isScrolled ? 'text-gray-800 h-8 w-8' : 'text-white h-8 w-8'} />
             ) : (
-              <Menu className={isScrolled ? 'text-gray-800' : 'text-white'} size={24} />
+              <Menu className={isScrolled ? 'text-gray-800 h-8 w-8' : 'text-white h-8 w-8'} />
             )}
           </button>
         </div>
@@ -99,15 +103,19 @@ const Header = () => {
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${
           isMobileMenuOpen ? 'max-h-96' : 'max-h-0'
         }`}>
-          <div className="py-4 space-y-4">
+          <div className="py-6 space-y-4">
             {navigation.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`block w-full px-4 py-2 text-left text-sm font-medium transition-colors duration-300 ${
+                className={`block w-full px-6 py-3 text-left text-lg font-medium rounded-lg transition-colors duration-300 ${
                   isScrolled 
                     ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100' 
                     : 'text-white hover:text-white/80 hover:bg-white/10'
+                } ${
+                  item.name === 'Купить курс' 
+                    ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700'
+                    : ''
                 }`}
               >
                 {item.name}

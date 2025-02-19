@@ -2,94 +2,83 @@
 <map version="1.0.1">
   <node TEXT="Дыхательные практики">
     <node TEXT="Главная страница" POSITION="right">
-      <node TEXT="Герой-секция">
-        <node TEXT="Заголовок: Избавьтесь от тревоги и усталости" />
-        <node TEXT="Подзаголовок: 10 минут в день" />
-        <node TEXT="Кнопка: Пройти тест" />
-        <node TEXT="Статистика: 90% людей" />
+      <node TEXT="Hero секция">
+        <node TEXT="Заголовок: Избавьтесь от тревоги и усталости уже сегодня" />
+        <node TEXT="Подзаголовок: Всего 10 минут в день" />
+        <node TEXT="Кнопка: Пройти бесплатный тест дыхания" />
+        <node TEXT="Статистика: 90% людей не знают о проблемах с дыханием" />
+        <node TEXT="Анимации">
+          <node TEXT="Параллакс фона" />
+          <node TEXT="Плавающие частицы" />
+          <node TEXT="Волна внизу" />
+        </node>
       </node>
+      <node TEXT="Экспресс-тест">
+        <node TEXT="Модальное окно">
+          <node TEXT="10 вопросов" />
+          <node TEXT="Прогресс-бар" />
+          <node TEXT="Анимированные переходы" />
+        </node>
+        <node TEXT="Результаты">
+          <node TEXT="3 категории оценки" />
+          <node TEXT="Персональные рекомендации" />
+          <node TEXT="Специальное предложение" />
+        </node>
+      </node>
+    </node>
+    <node TEXT="Основные секции" POSITION="left">
       <node TEXT="Проблемы с дыханием">
-        <node TEXT="Сидячий образ жизни" />
-        <node TEXT="Незнание техник" />
-        <node TEXT="Хронический стресс" />
-        <node TEXT="Вредные привычки" />
+        <node TEXT="4 карточки с описанием">
+          <node TEXT="Сидячий образ жизни" />
+          <node TEXT="Незнание техник" />
+          <node TEXT="Хронический стресс" />
+          <node TEXT="Вредные привычки" />
+        </node>
       </node>
       <node TEXT="Симптомы">
-        <node TEXT="Утром">
-          <node TEXT="Усталость после сна" />
-          <node TEXT="Трудно встать" />
-          <node TEXT="Зависимость от кофе" />
+        <node TEXT="3 временные категории">
+          <node TEXT="Утром" />
+          <node TEXT="Днем" />
+          <node TEXT="Вечером" />
         </node>
-        <node TEXT="Днем">
-          <node TEXT="Истощение к обеду" />
-          <node TEXT="Проблемы с концентрацией" />
-          <node TEXT="Головные боли" />
-        </node>
-        <node TEXT="Вечером">
-          <node TEXT="Нет сил" />
-          <node TEXT="Проблемы со сном" />
-          <node TEXT="Тревожность" />
-        </node>
+        <node TEXT="Интерактивные карточки" />
       </node>
     </node>
-    <node TEXT="Продукты" POSITION="left">
-      <node TEXT="Видео-урок">
-        <node TEXT="Длительность: 20 минут" />
-        <node TEXT="Цена: 990₽" />
-        <node TEXT="Мгновенный доступ" />
-        <node TEXT="Включает:">
-          <node TEXT="Базовые техники" />
-          <node TEXT="Практические упражнения" />
-          <node TEXT="PDF-инструкция" />
-        </node>
+    <node TEXT="Продукты" POSITION="right">
+      <node TEXT="Бесплатный видео-урок">
+        <node TEXT="20 минут" />
+        <node TEXT="990₽" />
+        <node TEXT="Базовые техники" />
+        <node TEXT="PDF-гайд в подарок" />
       </node>
-      <node TEXT="Полный курс">
-        <node TEXT="Цена: 9900₽" />
-        <node TEXT="Модули:">
-          <node TEXT="1. Основы дыхания" />
-          <node TEXT="2. Оздоравливающие практики" />
-          <node TEXT="3. Энергетические практики" />
-          <node TEXT="4. Правильные привычки" />
-        </node>
+      <node TEXT="Групповые занятия">
+        <node TEXT="5 занятий" />
+        <node TEXT="7 500₽" />
+        <node TEXT="Мини-группы до 5 человек" />
+        <node TEXT="Бесплатная консультация" />
+      </node>
+      <node TEXT="Индивидуальный курс">
+        <node TEXT="4 модуля" />
+        <node TEXT="14 999₽" />
+        <node TEXT="8 недель обучения" />
+        <node TEXT="Персональное сопровождение" />
       </node>
     </node>
-    <node TEXT="Дополнительные секции" POSITION="right">
-      <node TEXT="О дыхании">
-        <node TEXT="Улучшение дыхания" />
-        <node TEXT="Здоровье" />
-        <node TEXT="Ментальное состояние" />
-        <node TEXT="Энергия" />
-      </node>
-      <node TEXT="Обо мне">
-        <node TEXT="Опыт: 5+ лет" />
-        <node TEXT="500+ учеников" />
-        <node TEXT="3 авторских курса" />
-      </node>
+    <node TEXT="Дополнительно" POSITION="left">
       <node TEXT="Отзывы">
-        <node TEXT="3 отзыва с фото" />
-        <node TEXT="Рейтинг и описание" />
+        <node TEXT="Слайдер отзывов" />
+        <node TEXT="Фото отзывов" />
+        <node TEXT="Модальные окна" />
       </node>
-      <node TEXT="FAQ">
-        <node TEXT="Противопоказания" />
-        <node TEXT="Скорость результата" />
-        <node TEXT="Время занятий" />
+      <node TEXT="Анимации">
+        <node TEXT="PageTransition" />
+        <node TEXT="SectionTransition" />
+        <node TEXT="Framer Motion" />
       </node>
-    </node>
-    <node TEXT="Технические элементы" POSITION="left">
-      <node TEXT="Навигация">
-        <node TEXT="Главное меню" />
-        <node TEXT="Якорные ссылки" />
-        <node TEXT="Кнопки действий" />
-      </node>
-      <node TEXT="Интерактив">
-        <node TEXT="Тест дыхания" />
-        <node TEXT="Форма контактов" />
-        <node TEXT="Таймер акции" />
-      </node>
-      <node TEXT="SEO">
-        <node TEXT="sitemap.xml" />
-        <node TEXT="robots.txt" />
-        <node TEXT="Мета-теги" />
+      <node TEXT="UI элементы">
+        <node TEXT="Таймеры акций" />
+        <node TEXT="Прогресс-бары" />
+        <node TEXT="Интерактивные кнопки" />
       </node>
     </node>
   </node>
