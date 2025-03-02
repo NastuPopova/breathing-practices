@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0.1">
+  <node TEXT="Дыхательные практики">
+    <node TEXT="Главная страница" POSITION="right">
+      <node TEXT="Hero секция">
+        <node TEXT="Заголовок: Избавьтесь от тревоги и усталости уже сегодня" />
+        <node TEXT="Подзаголовок: Всего 10 минут в день" />
+        <node TEXT="Кнопка: Пройти бесплатный тест дыхания" />
+        <node TEXT="Статистика: 90% людей не знают о проблемах с дыханием" />
+        <node TEXT="Анимации">
+          <node TEXT="Параллакс фона" />
+          <node TEXT="Плавающие частицы" />
+          <node TEXT="Волна внизу" />
+        </node>
+      </node>
+      <node TEXT="Экспресс-тест">
+        <node TEXT="Модальное окно">
+          <node TEXT="11 вопросов" />
+          <node TEXT="Прогресс-бар" />
+          <node TEXT="Анимированные переходы" />
+          <node TEXT="Счетчик активных пользователей" />
+        </node>
+        <node TEXT="Результаты">
+          <node TEXT="3 категории оценки" />
+          <node TEXT="Персональные рекомендации" />
+          <node TEXT="PDF-гайд в подарок" />
+          <node TEXT="Специальное предложение" />
+        </node>
+      </node>
+    </node>
+    <node TEXT="Основные секции" POSITION="left">
+      <node TEXT="Проблемы с дыханием">
+        <node TEXT="4 карточки с описанием">
+          <node TEXT="Сидячий образ жизни" />
+          <node TEXT="Незнание техник" />
+          <node TEXT="Хронический стресс" />
+          <node TEXT="Вредные привычки" />
+        </node>
+      </node>
+      <node TEXT="Симптомы">
+        <node TEXT="3 временные категории">
+          <node TEXT="Утром" />
+          <node TEXT="Днем" />
+          <node TEXT="Вечером" />
+        </node>
+        <node TEXT="Интерактивные карточки" />
+      </node>
+    </node>
+    <node TEXT="Продукты" POSITION="right">
+      <node TEXT="Стартовый комплект">
+        <node TEXT="40-минутный видеоурок" />
+        <node TEXT="990₽ (скидка 62%)" />
+        <node TEXT="PDF-инструкция" />
+        <node TEXT="Мгновенный доступ" />
+        <node TEXT="Бонусы">
+          <node TEXT="Урок по замеру контрольной паузы" />
+          <node TEXT="Аудиозапись для медитации" />
+        </node>
+      </node>
+      <node TEXT="Индивидуальные консультации">
+        <node TEXT="4500₽ (скидка 25%)" />
+        <node TEXT="Разбор техники дыхания" />
+        <node TEXT="Видеозапись консультаций" />
+        <node TEXT="Бесплатный анализ дыхания" />
+      </node>
+      <node TEXT="Полный курс">
+        <node TEXT="4 модуля" />
+        <node TEXT="14 999₽ (скидка 32%)" />
+        <node TEXT="8 недель обучения" />
+        <node TEXT="Персональное сопровождение" />
+        <node TEXT="Бонус: урок для детей" />
+      </node>
+    </node>
+    <node TEXT="Дополнительно" POSITION="left">
+      <node TEXT="Статистика">
+        <node TEXT="Активные пользователи" />
+        <node TEXT="Счетчик тестов" />
+        <node TEXT="Улучшившие дыхание" />
+      </node>
+      <node TEXT="Анимации">
+        <node TEXT="PageTransition" />
+        <node TEXT="SectionTransition" />
+        <node TEXT="Framer Motion" />
+      </node>
+      <node TEXT="UI элементы">
+        <node TEXT="Таймеры акций" />
+        <node TEXT="Прогресс-бары" />
+        <node TEXT="Интерактивные кнопки" />
+        <node TEXT="Модальные окна" />
+      </node>
+    </node>
+  </node>
+</map> 

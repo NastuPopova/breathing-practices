@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/breathing-practices/static/css/main.c09d6344.css",
+    "main.js": "/breathing-practices/static/js/main.ef3c59ed.js",
+    "static/js/453.5d720794.chunk.js": "/breathing-practices/static/js/453.5d720794.chunk.js",
+    "index.html": "/breathing-practices/index.html",
+    "main.c09d6344.css.map": "/breathing-practices/static/css/main.c09d6344.css.map",
+    "main.ef3c59ed.js.map": "/breathing-practices/static/js/main.ef3c59ed.js.map",
+    "453.5d720794.chunk.js.map": "/breathing-practices/static/js/453.5d720794.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c09d6344.css",
+    "static/js/main.ef3c59ed.js"
+  ]
+}
