@@ -3,7 +3,6 @@ import {
   Bell, 
   Send, 
   BellOff,
-  Info 
 } from 'lucide-react';
 
 const SidebarNotificationsMenu = ({ 
@@ -33,7 +32,7 @@ const SidebarNotificationsMenu = ({
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const handleTelegramClick = () => {
-    window.open('https://t.me/NastuPopova', '_blank');
+    window.open('https://t.me/breathing_practices_bot', '_blank');
   };
 
   return (

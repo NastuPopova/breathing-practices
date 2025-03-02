@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Check, Clock, Zap, Gift, Send } from 'lucide-react';
+import { Check, Clock, Gift, Send } from 'lucide-react';
 import SectionTransition from './SectionTransition';
 
-const TELEGRAM_BOT = 'breathing_opros_bot'; // Замените на имя вашего бота
+const TELEGRAM_BOT = 'breathing_practices_bot'; // Замените на имя вашего бота
 
 const Products = () => {
   const [timeLeft, setTimeLeft] = useState('23:59:59');

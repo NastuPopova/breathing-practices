@@ -71,7 +71,7 @@ const VerificationButton = ({ onVerify }) => {
     localStorage.setItem('verificationCode', verificationCode);
     
     // Открываем Telegram с ботом
-    window.open(`https://t.me/${botUsername}?start=${verificationCode}`, '_blank');
+    window.open(`https://t.me/breathing_practices_bot?start=${verificationCode}`, '_blank');
     
     // Начинаем проверку верификации
     checkVerification(verificationCode);
@@ -348,6 +348,9 @@ const ReviewCard = ({ review, onClick, onImageClick }) => {
 };
 
 const Reviews = () => {
+  const [reviews, setReviews] = useState([]);
+  const [newReview, setNewReview] = useState('');
+  const [rating, setRating] = useState(5);
   const [selectedReview, setSelectedReview] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -392,7 +395,7 @@ const Reviews = () => {
   const startVerification = () => {
     const code = generateVerificationCode();
     setVerificationCode(code);
-    window.open(`https://t.me/your_bot_username?start=${code}`, '_blank');
+    window.open(`https://t.me/breathing_practices_bot?start=${code}`, '_blank');
     checkVerificationStatus(code);
   };
 

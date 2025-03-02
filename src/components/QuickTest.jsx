@@ -335,6 +335,12 @@ const QuickTest = () => {
     }
   }, [currentQuestion, questions.length]);
 
+  useEffect(() => {
+    if (currentQuestion === questions.length) {
+      calculateResult();
+    }
+  }, [currentQuestion]);
+
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
   const handleAnswer = (answerIndex) => {
@@ -411,7 +417,7 @@ const QuickTest = () => {
   };
 
   const handleConsultation = () => {
-    window.open('https://t.me/NastuPopova', '_blank');
+    window.open('https://t.me/breathing_practices_bot', '_blank');
     setShowResults(false);
   };
 
@@ -459,6 +465,11 @@ const QuickTest = () => {
       Осталось примерно {estimatedTimeLeft} минуты
     </div>
   );
+
+  const calculateResult = () => {
+    // Здесь можно добавить логику подсчета результатов
+    console.log('Тест завершен');
+  };
 
   if (showResults) {
     return (
