@@ -159,7 +159,6 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 Пройти бесплатный тест дыхания
-                <span className="block text-sm mt-1 text-orange-200">Осталось 12 бесплатных мест</span>
               </motion.button>
 
               <motion.p 

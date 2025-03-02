@@ -19,6 +19,11 @@ const navigation = [
     href: '#faq'
   },
   {
+    name: 'Пройти тест',
+    href: '#quick-test',
+    isHighlighted: true
+  },
+  {
     name: 'Купить курс',
     href: '#products'
   }
@@ -66,18 +71,20 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-lg font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg ${
+                className={`text-lg font-medium transition-all duration-300 hover:scale-105 px-4 py-2 rounded-lg whitespace-nowrap ${
                   isScrolled 
                     ? 'text-gray-700 hover:text-gray-900 hover:bg-gray-100' 
                     : 'text-white hover:text-white/80 hover:bg-white/10'
                 } ${
                   item.name === 'Купить курс' 
                     ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700 shadow-lg hover:shadow-xl'
+                    : item.isHighlighted
+                    ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700 shadow-lg hover:shadow-xl'
                     : ''
                 }`}
               >
@@ -115,6 +122,8 @@ const Header = () => {
                 } ${
                   item.name === 'Купить курс' 
                     ? 'bg-gradient-to-r from-red-500 to-red-600 text-white hover:from-red-600 hover:to-red-700'
+                    : item.isHighlighted
+                    ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white hover:from-orange-600 hover:to-orange-700'
                     : ''
                 }`}
               >

@@ -15,15 +15,13 @@
       </node>
       <node TEXT="Экспресс-тест">
         <node TEXT="Модальное окно">
-          <node TEXT="11 вопросов" />
+          <node TEXT="10 вопросов" />
           <node TEXT="Прогресс-бар" />
           <node TEXT="Анимированные переходы" />
-          <node TEXT="Счетчик активных пользователей" />
         </node>
         <node TEXT="Результаты">
           <node TEXT="3 категории оценки" />
           <node TEXT="Персональные рекомендации" />
-          <node TEXT="PDF-гайд в подарок" />
           <node TEXT="Специальное предложение" />
         </node>
       </node>
@@ -47,35 +45,30 @@
       </node>
     </node>
     <node TEXT="Продукты" POSITION="right">
-      <node TEXT="Стартовый комплект">
-        <node TEXT="40-минутный видеоурок" />
-        <node TEXT="990₽ (скидка 62%)" />
-        <node TEXT="PDF-инструкция" />
-        <node TEXT="Мгновенный доступ" />
-        <node TEXT="Бонусы">
-          <node TEXT="Урок по замеру контрольной паузы" />
-          <node TEXT="Аудиозапись для медитации" />
-        </node>
+      <node TEXT="Бесплатный видео-урок">
+        <node TEXT="20 минут" />
+        <node TEXT="990₽" />
+        <node TEXT="Базовые техники" />
+        <node TEXT="PDF-гайд в подарок" />
       </node>
-      <node TEXT="Индивидуальные консультации">
-        <node TEXT="4500₽ (скидка 25%)" />
-        <node TEXT="Разбор техники дыхания" />
-        <node TEXT="Видеозапись консультаций" />
-        <node TEXT="Бесплатный анализ дыхания" />
+      <node TEXT="Групповые занятия">
+        <node TEXT="5 занятий" />
+        <node TEXT="7 500₽" />
+        <node TEXT="Мини-группы до 5 человек" />
+        <node TEXT="Бесплатная консультация" />
       </node>
-      <node TEXT="Полный курс">
+      <node TEXT="Индивидуальный курс">
         <node TEXT="4 модуля" />
-        <node TEXT="14 999₽ (скидка 32%)" />
+        <node TEXT="14 999₽" />
         <node TEXT="8 недель обучения" />
         <node TEXT="Персональное сопровождение" />
-        <node TEXT="Бонус: урок для детей" />
       </node>
     </node>
     <node TEXT="Дополнительно" POSITION="left">
-      <node TEXT="Статистика">
-        <node TEXT="Активные пользователи" />
-        <node TEXT="Счетчик тестов" />
-        <node TEXT="Улучшившие дыхание" />
+      <node TEXT="Отзывы">
+        <node TEXT="Слайдер отзывов" />
+        <node TEXT="Фото отзывов" />
+        <node TEXT="Модальные окна" />
       </node>
       <node TEXT="Анимации">
         <node TEXT="PageTransition" />
@@ -86,7 +79,6 @@
         <node TEXT="Таймеры акций" />
         <node TEXT="Прогресс-бары" />
         <node TEXT="Интерактивные кнопки" />
-        <node TEXT="Модальные окна" />
       </node>
     </node>
   </node>

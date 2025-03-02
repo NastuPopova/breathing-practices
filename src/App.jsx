@@ -11,6 +11,7 @@ import QuickTest from './components/QuickTest';
 import Products from './components/Products';
 import FAQ from './components/FAQ';
 import ScrollToTop from './components/ScrollToTop';
+import PopupNotifications from './components/PopupNotifications';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Products />
       <FAQ />
       <ScrollToTop />
+      <PopupNotifications />
     </div>
   );
 }
